@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+# Skip in CI and when explicitly disabled
+[ -n "$CI" ] && exit 0
+[ "$HUSKY" = "0" ] && exit 0
+
+# Lint only staged files to keep things fast and avoid touching generated files
+npx lint-staged
