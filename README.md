@@ -106,3 +106,4 @@ See TypeScript types for all options and return values.
 ## License
 
 MIT
+
