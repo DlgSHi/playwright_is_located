@@ -96,4 +96,3 @@ export function intersect(a: BoundingBox, b: BoundingBox): BoundingBox {
   const y2 = Math.min(bottom(a), bottom(b));
   return { x: x1, y: y1, width: Math.max(0, x2 - x1), height: Math.max(0, y2 - y1) };
 }
-

@@ -289,7 +289,10 @@ export async function inOrder(
 /**
  * Overlap area (A∩B) divided by area(A). 0..1.
  */
-export async function intersectionAreaRatio(firstElement: LocatorLike, secondElement: LocatorLike): Promise<Ratio01> {
+export async function intersectionAreaRatio(
+  firstElement: LocatorLike,
+  secondElement: LocatorLike,
+): Promise<Ratio01> {
   const [A, B] = await Promise.all([firstElement.boundingBox(), secondElement.boundingBox()]);
   if (!A || !B || area(A) === 0) return 0 as Ratio01;
   return Math.min(1, Math.max(0, area(intersect(A, B)) / area(A))) as Ratio01;

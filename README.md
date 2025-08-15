@@ -49,17 +49,23 @@ await expect(await isInViewport(locator, { threshold: 0.5 })).toBe(true); // at 
 await expect(await relativePosition(firstLocator, secondLocator, 'left')).toBe(true);
 
 // Is A below B with at least 10px gap and 80% horizontal overlap?
-await expect(await relativePosition(firstLocator, secondLocator, 'below', { gap: 10, overlapRatio: 0.8 })).toBe(true);
+await expect(
+  await relativePosition(firstLocator, secondLocator, 'below', { gap: 10, overlapRatio: 0.8 }),
+).toBe(true);
 ```
 
 ### 3. Assert alignment
 
 ```ts
 // Are A and B top/bottom edges aligned (x axis)?
-await expect(await areAligned(firstLocator, secondLocator, { axis: 'x', mode: 'edges', tolerance: 2 })).toBe(true);
+await expect(
+  await areAligned(firstLocator, secondLocator, { axis: 'x', mode: 'edges', tolerance: 2 }),
+).toBe(true);
 
 // Are A and B horizontally centered?
-await expect(await areAligned(firstLocator, secondLocator, { axis: 'y', mode: 'centers' })).toBe(true);
+await expect(await areAligned(firstLocator, secondLocator, { axis: 'y', mode: 'centers' })).toBe(
+  true,
+);
 ```
 
 ### 4. Visible area ratio
@@ -106,4 +112,3 @@ See TypeScript types for all options and return values.
 ## License
 
 MIT
-
