@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/DlgSHi/playwright_is_located/compare/v1.0.0...v1.1.0) (2025-08-17)
+
+
+### Features
+
+* unify package name ([72a0c64](https://github.com/DlgSHi/playwright_is_located/commit/72a0c649a498727f240d9c79ef20628b49778175))
+
 # 1.0.0 (2025-08-17)
 
 
