@@ -1,4 +1,4 @@
-# playwright-is-positioned
+# playwright_is_located
 
 Layout & viewport assertions for Playwright powered by `locator.boundingBox()`.
 
@@ -13,7 +13,7 @@ Layout & viewport assertions for Playwright powered by `locator.boundingBox()`.
 ## Install
 
 ```bash
-npm i -D playwright-is-positioned @playwright/test
+npm i -D playwright_is_located @playwright/test
 ```
 
 ## Usage
@@ -29,7 +29,7 @@ import {
   intersectionAreaRatio,
   inOrder,
   edgeDistance,
-} from 'playwright-is-positioned';
+} from 'playwright_is_located';
 ```
 
 ### 1. Assert element is in the viewport
