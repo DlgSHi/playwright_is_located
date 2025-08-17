@@ -3,6 +3,14 @@
 
 ### Features
 
+* unify package name ([4a036a5](https://github.com/DlgSHi/playwright_is_located/commit/4a036a55f1783b64db9755c8067a93f8c44c8c80))
+* unify package name ([f75b765](https://github.com/DlgSHi/playwright_is_located/commit/f75b7659aadbb91796657b25a82071207306dd02))
+
+# 1.0.0 (2025-08-17)
+
+
+### Features
+
 * unify package name ([f75b765](https://github.com/DlgSHi/playwright_is_located/commit/f75b7659aadbb91796657b25a82071207306dd02))
 
 # 1.0.0 (2025-08-15)
